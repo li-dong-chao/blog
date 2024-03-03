@@ -1,0 +1,39 @@
+baseURL = "http://blog.lidongchao.cn"
+title = "LiDongchao"
+theme = "yinyang"
+LanguageCode = "zh-CN"
+DefaultContentLanguage = "cn"
+enableRobotsTXT = true
+canonifyURLs = false
+enableEmoji = true
+
+[author]
+name = "LiDongchao"
+homepage = "/about"
+
+[permalinks]
+post = "/:year/:month/:title/"
+
+[params]
+headTitle = "LiDongchao"
+description = "Keep the passion."
+favicon = "/favicon.svg"
+mainSections = ["posts"]
+lazyImage = true
+
+[[params.headerTags]]
+name = "Home"
+link = "/"
+
+[[params.headerTags]]
+name = "About"
+link = "/about"
+
+
+[markup.highlight]
+style = 'github'
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+
