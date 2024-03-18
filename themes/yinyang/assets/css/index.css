@@ -40,7 +40,7 @@ a:hover {
 .markdown-body blockquote {
     margin: 0px;
     padding: 0.2em 2em;
-    font-size: 85%;
+    /* font-size: 85%; */
     color: #57606a;
     border-left: 4px solid #4cb3d4;
     border-radius: 6px;
