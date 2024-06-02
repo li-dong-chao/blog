@@ -131,7 +131,7 @@ if __name__ == '__main__':
 
 ```
 
-执行完上面的代码之后，在命令行窗口执行 ``tensorboard --logdir="./logs` 便可以查看网络结构了，形式如下：
+执行完上面的代码之后，在命令行窗口执行 `tensorboard --logdir="./logs` 便可以查看网络结构了，形式如下：
 
 ![image-20240318130937160](https://littletom.oss-cn-nanjing.aliyuncs.com/image-20240318130937160.png)
 

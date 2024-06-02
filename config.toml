@@ -1,4 +1,4 @@
-baseURL = "http://blog.lidongchao.cn"
+baseURL = "https://lidongchao.cn"
 title = "LiDongchao"
 theme = "yinyang"
 LanguageCode = "zh-CN"
