@@ -26,6 +26,34 @@ a:hover {
     margin: 50px 0;
 }
 
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(195, 195, 195);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(140, 140, 140);
+}
+
+::-moz-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-moz-scrollbar-thumb {
+    background-color: rgb(195, 195, 195);
+    border-radius: 6px;
+}
+
+::-moz-scrollbar-thumb:hover {
+    background-color: rgb(140, 140, 140);
+}
+
 .markdown-body {
     font-family: source-serif-pro, Georgia, 'Microsoft YaHei', Cambria, "Times New Roman", Times, serif;
     font-size: 16px;
@@ -40,41 +68,71 @@ a:hover {
 .markdown-body blockquote {
     margin: 0px;
     padding: 0.2em 2em;
-    /* font-size: 85%; */
     color: #57606a;
     border-left: 4px solid #4cb3d4;
     border-radius: 6px;
     background-color: #e6f4ff;
 }
 
-.markdown-body pre {
+.highlight {
+    border-radius: 10px;
+}
+
+.highlight pre {
+    overflow: scroll;
+    padding: 0.5em;
+    border-radius: 10px;
+}
+
+.highlight code {
+    display: inline-block;
+    font-size: 13px;
+    font-family: "Fira code", Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+}
+
+.highlight {
+    position: relative;
+}
+
+.highlight-copy-btn {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    border: 0;
+    border-radius: 4px;
+    padding: 1px;
+    font-size: 0.8em;
+    line-height: 1.8;
+    color: #fff;
+    background-color: #777;
+    min-width: 55px;
+    text-align: center;
+}
+
+.highlight-copy-btn:hover {
+    background-color: #666;
+}
+
+/* .markdown-body pre {
     margin: 1em 0;
     padding: 16px;
     overflow: auto;
     border-radius: 10px;
-}
-
-.markdown-body code {
-    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-    padding: 0.2em 0.4em;
-    font-size: 85%;
-    background-color: #eeeeee;
-    border-radius: 6px;
-}
+} */
 
 /* reset code */
-.markdown-body pre {
+/* .markdown-body pre {
     padding: 10px;
     background-color: #eee !important;
     border-radius: 10px;
-}
+} */
 
-.markdown-body pre>code {
+/* .markdown-body pre>code {
     font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
     padding: 0;
     font-size: 85%;
     border: 0;
-}
+} */
 
 /* table */
 table,
@@ -160,19 +218,10 @@ td {
     padding: 3px 0;
     border: #000 2px solid;
     border-radius: 5px;
-    /* margin-bottom: 3px; */
 }
 
 .site-footer {
     margin-top: 50px;
-    /* margin-bottom: 80px; */
-    /* display: flex; */
-    /* justify-content: flex-end; */
-    /* flex-wrap: wrap; */
-    /* padding: 12px 0; */
-    /* border-width: 3px; */
-    /* border-style: solid none; */
-    /* border-color: #000; */
 }
 
 .site-footer-item {
@@ -184,7 +233,7 @@ td {
 .post-content img {
     max-width: 100%;
     display: block;
-    margin-right: auto;
+    margin: 0 auto;
     margin-top: 12px;
     border-radius: 10px;
 }
@@ -228,7 +277,6 @@ td {
 .post-content p {
     hyphens: auto;
     line-height: 1.8;
-    /* text-align: justify; */
     text-justify: ideographic;
     margin-bottom: 1em;
 }

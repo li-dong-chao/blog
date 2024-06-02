@@ -30,10 +30,17 @@ name = "About"
 link = "/about"
 
 
+[markup]
 [markup.highlight]
-style = 'github'
+guessSyntax = true
+lineNoStart = 1
+lineNos = true
+lineNumbersInTable = false
+noClasses = true
+style = "xcode-dark"
+tabWidth = 4
+
 
 [taxonomies]
 tag = "tags"
 category = "categories"
-
